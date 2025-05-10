@@ -1,37 +1,57 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medical App - Dashboard</title>
+    <title>Medical App - Home</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <header>
-       <nav>
-            <ul>
-                <li><a href="contact.html" >Contact</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="appointment.html">Appointments</a></li>
+    <header class="site-header">
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="pages/contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="pages/appointment.html" class="nav-link">Appointments</a></li>
             </ul>
-
-       </nav> 
+        </nav>
     </header>
-    <main>
-        <section class="find-doctor">
-            <h2>Find a doctor</h2>
-            <form id="doctor-search">
-                <input type="text" id="speciality" placeholder="Speciality">
-                <input type="text" id="location" placeholder="Location">
-                <button type="submit">Search</button>
-            </form>
-            <div id="doctor-results"></div>
-
+    <main class="main-content">
+        <section class="hero-banner">
+            <div class="hero-image-container">
+                <img src="images/hero-image.jpg" alt="A welcoming medical environment">
+            </div>
+            <h1>Welcome to Our Medical App</h1>
+            <p>Your health, simplified.</p>
+        </section>
+        <section class="info-cards">
+            <article class="card">
+                <img src="images/doctor.jpg" alt="Doctor icon" class="card-icon">
+                <h3>Find a Doctor</h3>
+                <p>Search our directory of qualified medical professionals.</p>
+            </article>
+            <article class="card">
+                <img src="images/appointment.jpg" alt="Appointment icon" class="card-icon">
+                <h3>Book Appointments</h3>
+                <p>Schedule your appointments with ease.</p>
+            </article>
+            <article class="card">
+                <img src="images/contact.jpg" alt="Contact icon" class="card-icon">
+                <h3>Contact Us</h3>
+                <p>Get in touch for any inquiries or support.</p>
+            </article>
+        </section>
+        <section class="about-us">
+            <h2>About Our Services</h2>
+            <div class="about-us-image">
+                <img src="images/about-us.jpg" alt="Healthcare professionals working together">
+            </div>
+            <p>We are dedicated to providing you with the best healthcare experience. Our platform connects you with top doctors and streamlines the appointment booking process. We believe in accessible and efficient healthcare for everyone.</p>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2023 Medical Appointments</p>
+    <footer class="site-footer">
+        <p>&copy; 2025 Medical Appointments</p>
     </footer>
 </body>
 </html>
